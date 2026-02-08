@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Galaxy - Taste of Excellence</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <div class="logo">Restaurant Galaxy</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#hours">Hours</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#order" class="order-btn">Order Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="toll-free">Toll Free: 1-800-GALAXY</div>
+        <div class="hero-content">
+            <h1>Restaurant Galaxy</h1>
+            <p>Taste of Excellence Beyond the Stars</p>
+            <a href="#menu" class="cta-btn">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Restaurant Galaxy</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Welcome to Our Culinary Universe</h3>
+                <p>Restaurant Galaxy has been serving exquisite cuisine since 2010. We pride ourselves on using the freshest ingredients and traditional cooking methods to create dishes that are out of this world.</p>
+                <p>Our chefs bring together flavors from around the globe, creating a unique dining experience that takes your taste buds on an interstellar journey.</p>
+                <p>Whether you're joining us for a casual lunch or a special celebration, we promise an unforgettable experience with exceptional service and ambiance.</p>
+            </div>
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=800&h=600&fit=crop" alt="Restaurant Interior">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <h2>Our Signature Dishes</h2>
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=500&h=400&fit=crop" alt="Salad">
+                <div class="menu-item-content">
+                    <h3>Galaxy Garden Salad</h3>
+                    <p class="price">$12.99</p>
+                    <p>Fresh mixed greens with cosmic dressing and stellar toppings</p>
+                    <button onclick="addToCart('Galaxy Garden Salad')">Order Now</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=500&h=400&fit=crop" alt="Pizza">
+                <div class="menu-item-content">
+                    <h3>Stellar Supreme Pizza</h3>
+                    <p class="price">$18.99</p>
+                    <p>Wood-fired pizza with premium toppings and melted cheese</p>
+                    <button onclick="addToCart('Stellar Supreme Pizza')">Order Now</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=500&h=400&fit=crop" alt="Pasta">
+                <div class="menu-item-content">
+                    <h3>Nebula Pasta</h3>
+                    <p class="price">$15.99</p>
+                    <p>Homemade pasta with rich cosmic cream sauce</p>
+                    <button onclick="addToCart('Nebula Pasta')">Order Now</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500&h=400&fit=crop" alt="Burger">
+                <div class="menu-item-content">
+                    <h3>Meteor Burger</h3>
+                    <p class="price">$14.99</p>
+                    <p>Juicy beef patty with special galaxy sauce and toppings</p>
+                    <button onclick="addToCart('Meteor Burger')">Order Now</button>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&h=400&fit=crop" alt="Dessert">
+                <div class="menu-item-content">
+                    <h3>Cosmic Chocolate Cake</h3>
+                    <p class="price">$8.99</p>
+                    <p>Rich chocolate cake that's heavenly delicious</p>
+                    <button onclick="addToCart('Cosmic Chocolate Cake')">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="services-list">
+            <h3>What We Offer</h3>
+            <ul>
+                <li>Dine-in Restaurant Experience</li>
+                <li>Online Ordering & Delivery</li>
+                <li>Catering for Events & Parties</li>
+                <li>Private Dining Rooms Available</li>
+                <li>Takeaway & Pickup Services</li>
+                <li>Special Diet Menu Options</li>
+                <li>Corporate Lunch Packages</li>
+                <li>Weekend Brunch Specials</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Hours Section -->
+    <section class="hours" id="hours">
+        <h2>Opening Hours</h2>
+        <div class="hours-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Hours</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>11:00 AM - 10:00 PM</td>
+                        <td>Open</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>11:00 AM - 10:00 PM</td>
+                        <td>Open</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>11:00 AM - 10:00 PM</td>
+                        <td>Open</td>
+                    </tr>
+                    <tr>
+                        <td>Thursday</td>
+                        <td>11:00 AM - 10:00 PM</td>
+                        <td>Open</td>
+                    </tr>
+                    <tr>
+                        <td>Friday</td>
+                        <td>11:00 AM - 11:00 PM</td>
+                        <td>Open</td>
+                    </tr>
+                    <tr>
+                        <td>Saturday</td>
+                        <td>10:00 AM - 11:00 PM</td>
+                        <td>Open</td>
+                    </tr>
+                    <tr>
+                        <td>Sunday</td>
+                        <td>10:00 AM - 10:00 PM</td>
+                        <td>Open</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Get In Touch</h2>
+        <p>We'd love to hear from you! Visit us or get in touch.</p>
+        <div class="contact-info">
+            <div class="contact-card">
+                <h3>Location</h3>
+                <p>123 Galaxy Avenue<br>Food District, City Center<br>Universal Plaza</p>
+            </div>
+            <div class="contact-card">
+                <h3>Phone</h3>
+                <p>Toll Free: 1-800-GALAXY<br>Local: (555) 123-4567<br>Reservations: (555) 123-4568</p>
+            </div>
+            <div class="contact-card">
+                <h3>Email</h3>
+                <p>info@restaurantgalaxy.com<br>reservations@restaurantgalaxy.com<br>catering@restaurantgalaxy.com</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Restaurant Galaxy</h3>
+                <p>Bringing you the finest dining experience with a touch of cosmic excellence.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com" target="_blank">📘 Facebook</a>
+                    <a href="https://twitter.com" target="_blank">🐦 Twitter</a>
+                    <a href="https://instagram.com" target="_blank">📷 Instagram</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get special offers and updates!</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Restaurant Galaxy. All Rights Reserved. | Developed by Lahiru Kavinda Jayarathne</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
